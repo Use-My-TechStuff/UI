@@ -1,5 +1,7 @@
 UMTS [Use My Tech Stuff] is a platform for connecting users in need of renting equipment/properties with the users willing to rent out same. It eliminates the overhead cost due to middlemen in renting equipment or properties.
 
+Run compiler
+less-watch-compiler less css index.less
 
 MVP
 1. HTML/CSS site is deployed. Student laid out all elements of the design. Note: there may be visible user interface inconsistencies across the project, but all elements are on the page. 

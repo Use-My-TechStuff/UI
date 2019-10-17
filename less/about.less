@@ -1,0 +1,117 @@
+.container {
+    background-image: url(/design-files/sunset.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.topNav {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links {
+        color: @nav-text;   
+        font-size: 1.8rem;
+    } 
+    a:Hover {
+        color: @hover;
+    }
+    h1 {
+        height: 50%;
+        color: @peach;
+    }
+    
+}
+
+.top-img {
+    display: block;
+    padding: 1%;
+    border-radius: 30%;
+    border: solid black 1px;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 800px
+}
+
+.main {
+    .middle-section {
+        display:flex;
+        color: @font-color;
+        width: 96%;
+        margin: 15px auto;
+        p {
+            padding: 2%;
+            border: solid black 1px;
+            margin: 0 10px;
+            border-radius: 8px;
+            background-color: black;
+            opacity: .7;
+            @media @mobile {
+                margin: 10px 0;
+            }
+        }
+        @media @mobile{
+            flex-direction:column;
+        }
+    }  
+}
+
+.title-dream {
+    text-align: center;
+    color: @font-color;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 4rem;
+    color: @font-color;
+}
+
+.bottom-img {
+    display: block;
+    padding: 1%;
+    border-radius: 10%;
+    border: solid black 1px;
+    margin: 50px auto 100px auto;
+    width: 100%;
+    max-width: 800px
+}
+
+    footer {
+      flex-direction: center;
+      display: flex;
+      font-size: 1.8rem;
+    .copywright {
+        color: @copywright-text;
+        padding: 20px;
+        text-align: center;
+        margin: 10%;
+    }
+    @media @mobile  {
+        background-size: cover;
+        background-position: inherit;
+        .topNav {
+    
+            header {
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .nav-links {
+                margin: 0 auto;
+                color: @nav-text;   
+                font-size: 1.8rem;
+            } 
+            a:Hover {
+                color: @hover;
+            }
+            h1 {
+                align-items: center;
+                height: 50%;
+                color: @secondary-text;
+            }          
+        }
+    }
+}  
