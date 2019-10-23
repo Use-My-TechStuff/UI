@@ -390,6 +390,12 @@ footer .copywright {
     width: 57ch;
   }
 }
+@media (max-width: 800px) {
+  .container2 {
+    width: 100%;
+    margin: auto;
+  }
+}
 .topNav2 header {
   display: flex;
   justify-content: center;
@@ -408,6 +414,14 @@ footer .copywright {
     margin: 10px;
     width: 305px;
     height: 20rem;
+  }
+}
+@media (max-width: 800px) {
+  .topNav2 header {
+    width: 100%;
+    margin: auto;
+    width: 780px;
+    height: auto;
   }
 }
 .topNav2 .nav-links {
