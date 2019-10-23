@@ -230,6 +230,16 @@ footer {
     width: 330px;
   }
 }
+@media (max-width: 800px) {
+  .container {
+    background: #477F87;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 259rem;
+    width: 940px;
+  }
+}
 .logo {
   height: 40px;
 }
@@ -249,6 +259,15 @@ footer {
     margin: 10px;
     width: 310px;
     height: 8rem;
+  }
+}
+@media (max-width: 800px) {
+  .topNav {
+    width: 940px;
+    height: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
   }
 }
 .topNav .nav-links {
@@ -274,6 +293,15 @@ footer {
 @media (max-width: 500px) {
   .top-img {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .top-img {
+    display: block;
+    padding: 5%;
+    border-radius: 40%;
+    border: solid black 1px;
+    width: 100%;
   }
 }
 .main .middle-section {
@@ -321,15 +349,17 @@ Button {
     width: 140px;
   }
 }
+@media (max-width: 800px) {
+  Button {
+    width: 200px;
+    font-size: 25px;
+  }
+}
 .bottom-img {
-  display: block;
-  padding: 1%;
-  border-radius: 10%;
-  border: solid black 1px;
-  width: 100%;
-  margin: 50px auto;
+  border-radius: 50%;
+  margin: 20px;
   max-width: 1000px;
-  height: 300px;
+  height: 360px;
 }
 footer {
   flex-direction: center;

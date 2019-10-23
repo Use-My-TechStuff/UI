@@ -10,6 +10,14 @@
         height: 259rem;
         width: 330px;
     }
+    @media @tablet {
+        background: @hover;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        height: 259rem;
+        width: 940px;
+    }
 }
 .logo {
     height: 40px;
@@ -30,7 +38,15 @@
             margin: 10px;
             width: 310px;
             height: 8rem;
-    }
+        }
+        @media @tablet {
+            width: 940px;
+            height: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            font-size: 25px;
+        }
+    
     .nav-links {
         
         color: @nav-text;   
@@ -52,6 +68,14 @@
     max-width: 800px;
     @media @mobile {
        display: none;
+    }
+    
+    @media @tablet {
+       display: block;
+       padding: 5%;
+       border-radius: 40%;
+       border: solid black 1px;
+       width: 100%
     }
    
 }
@@ -76,7 +100,6 @@
             justify-content: space-between;
             flex-direction: column;
             width: 100%;
-
         }
     }
 }
@@ -104,13 +127,17 @@ Button {
         display: flex;
         width: 140px;
     }
+    @media @tablet {
+        width: 200px;
+        font-size: 25px;
+    }
 }
 
 .bottom-img {
-    .image;
-    margin: 50px auto;
+    border-radius: 50%;
+    margin: 20px;
     max-width: 1000px;
-    height: 300px;   
+    height: 360px;   
 }
 
     footer {
