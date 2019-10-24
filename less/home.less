@@ -7,17 +7,17 @@
         background: @main-bg;
         background-size: cover;
         background-position: inherit;
-        height: 259rem;
-        width: 330px;
+        height: 230rem;
+        width: 490px;
     }
-    @media @tablet {
-        background: @hover;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        height: 259rem;
-        width: 940px;
-    }
+    // @media @tablet {
+    //     background: @hover;
+    //     width: 100%;
+    //     background-size: cover;
+    //     background-position: center;
+    //     height: 259rem;
+    //     width: 540px;
+    // }
 }
 .logo {
     height: 40px;
@@ -35,17 +35,17 @@
         @media @mobile {
             display: flex;
             justify-content: space-between;
-            margin: 10px;
-            width: 310px;
+            margin: 2px;
+            width: 480px;
             height: 8rem;
         }
-        @media @tablet {
-            width: 940px;
-            height: 0 auto;
-            display: flex;
-            justify-content: flex-start;
-            font-size: 25px;
-        }
+        // @media @tablet {
+        //     width: 940px;
+        //     height: 0 auto;
+        //     display: flex;
+        //     justify-content: flex-start;
+        //     font-size: 25px;
+        // }
     
     .nav-links {
         
@@ -70,13 +70,13 @@
        display: none;
     }
     
-    @media @tablet {
-       display: block;
-       padding: 5%;
-       border-radius: 40%;
-       border: solid black 1px;
-       width: 100%
-    }
+    // @media @tablet {
+    //    display: block;
+    //    padding: 5%;
+    //    border-radius: 40%;
+    //    border: solid black 1px;
+    //    width: 100%
+    // }
    
 }
 
@@ -125,19 +125,33 @@ Button {
    
     @media @mobile {
         display: flex;
-        width: 140px;
+        justify-content: center;
+        font-size: 2rem;
+        width: 440px;
     }
-    @media @tablet {
-        width: 200px;
-        font-size: 25px;
-    }
+    // @media @tablet {
+    //     width: 200px;
+    //     font-size: 25px;
+    // }
 }
 
 .bottom-img {
-    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    opacity: .5;
+    width: 100%;;
     margin: 20px;
-    max-width: 1000px;
-    height: 360px;   
+    width: 1860px;
+    height: 360px; 
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        border-radius: 40%;
+        opacity: .7;
+        width: 100%;
+        margin: auto;
+        height: 500px;
+    }  
 }
 
     footer {
@@ -149,5 +163,9 @@ Button {
         padding: 20px;
         text-align: center;
         margin: 10%;
+        @media @mobile {
+            display: flex;
+            align-items: flex-end;
+        }
     }
 }  

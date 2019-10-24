@@ -226,18 +226,8 @@ footer {
     background: #005F6B;
     background-size: cover;
     background-position: inherit;
-    height: 259rem;
-    width: 330px;
-  }
-}
-@media (max-width: 800px) {
-  .container {
-    background: #477F87;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: 259rem;
-    width: 940px;
+    height: 230rem;
+    width: 490px;
   }
 }
 .logo {
@@ -256,18 +246,9 @@ footer {
   .topNav {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    width: 310px;
+    margin: 2px;
+    width: 480px;
     height: 8rem;
-  }
-}
-@media (max-width: 800px) {
-  .topNav {
-    width: 940px;
-    height: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 25px;
   }
 }
 .topNav .nav-links {
@@ -293,15 +274,6 @@ footer {
 @media (max-width: 500px) {
   .top-img {
     display: none;
-  }
-}
-@media (max-width: 800px) {
-  .top-img {
-    display: block;
-    padding: 5%;
-    border-radius: 40%;
-    border: solid black 1px;
-    width: 100%;
   }
 }
 .main .middle-section {
@@ -346,20 +318,30 @@ Button {
 @media (max-width: 500px) {
   Button {
     display: flex;
-    width: 140px;
-  }
-}
-@media (max-width: 800px) {
-  Button {
-    width: 200px;
-    font-size: 25px;
+    justify-content: center;
+    font-size: 2rem;
+    width: 440px;
   }
 }
 .bottom-img {
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
+  width: 100%;
   margin: 20px;
-  max-width: 1000px;
+  width: 1860px;
   height: 360px;
+}
+@media (max-width: 500px) {
+  .bottom-img {
+    display: flex;
+    justify-content: center;
+    border-radius: 40%;
+    opacity: 0.7;
+    width: 100%;
+    margin: auto;
+    height: 500px;
+  }
 }
 footer {
   flex-direction: center;
@@ -371,6 +353,12 @@ footer .copywright {
   padding: 20px;
   text-align: center;
   margin: 10%;
+}
+@media (max-width: 500px) {
+  footer .copywright {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 .container2 {
   background-image: url(/design-files/rent-tech.jpg);
