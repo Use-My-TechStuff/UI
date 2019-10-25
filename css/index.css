@@ -1,31 +1,7 @@
-.classy-button {
-  border-radius: 10%;
-  cursor: pointer;
-}
-.image {
-  display: block;
-  padding: 1%;
-  border-radius: 10%;
-  border: solid black 1px;
+.mobileFlex {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-}
-.paragraph {
-  padding: 2%;
-  border: solid black 4px;
-  margin: 0 10px;
-  border-radius: 8px;
-  background-color: blueviolet;
-  opacity: 0.9;
-}
-.title {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 4rem;
-  color: #00DFFC;
-  border: solid black 4px;
-  opacity: 0.9;
-  background-color: blueviolet;
-  border-radius: 8px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -163,33 +139,41 @@ html {
 }
 html,
 body {
-  font-family: 'Open Sans';
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
 }
 h1,
 h2,
 h3,
 h4,
-h5 {
-  padding-bottom: 10px;
-  font-family: 'Open Sans';
+h5,
+footer {
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 h1 {
-  margin: 10px;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 h2 {
-  font-size: 3rem;
-}
-h3 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+  color: white;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  color: white;
 }
 p {
   line-height: 1.5;
-  font-size: 1.5rem;
-  padding: 0 auto;
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+  color: white;
+}
+footer {
+  font-size: 2rem;
+  margin-top: 10px;
 }
 header {
   display: flex;
@@ -208,270 +192,209 @@ header a {
   font-size: 1.6rem;
 }
 footer {
-  color: #00DFFC;
   padding: 20px 0;
   margin-top: 20%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .container {
-  background-image: url(/design-files/rent-tech.jpg);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.container .menuoptions {
   width: 100%;
-  background-size: cover;
-  background-position: center;
+  justify-content: space-around;
 }
-@media (max-width: 500px) {
-  .container {
-    background: #005F6B;
-    background-size: cover;
-    background-position: inherit;
-    height: 230rem;
-    width: 320px;
-  }
+.container header nav a {
+  text-decoration: none;
+  color: white;
+  justify-content: space-between;
+  font-size: 2rem;
 }
-.logo {
+.container .main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  background-image: url(../images/main1.jpg);
+  background-size: unset;
+}
+.container .mainbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container button {
+  width: 140px;
   height: 40px;
+  background: white;
+  align-items: flex-start;
+  border: 1px solid black;
+  margin-top: 40px;
+  border-radius: 30px;
 }
-.topNav header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
-  border: solid black 1px;
-  width: 1880px;
-  background-color: #2c237a;
-}
-@media (max-width: 500px) {
-  .topNav {
-    display: flex;
-    justify-content: space-between;
-    margin: 2px;
-    width: 320px;
-    height: 8rem;
-  }
-}
-.topNav .nav-links {
-  color: #00B4CC;
-  font-size: 1.8rem;
-}
-.topNav a:Hover {
-  color: #477F87;
-}
-.topNav h1 {
-  height: 50%;
-  color: #C4C4C4;
-}
-.top-img {
-  display: block;
-  padding: 1%;
-  border-radius: 10%;
-  border: solid black 1px;
-  width: 100%;
-  margin: 15px auto;
-  max-width: 800px;
-}
-@media (max-width: 500px) {
-  .top-img {
-    display: none;
-  }
-}
-.main .middle-section {
-  display: flex;
-  color: #C4C4C4;
-  width: 100%;
-  margin: 15px auto;
-}
-.main .middle-section p {
-  padding: 5%;
-  border: solid black 1px;
-  margin: 0 10px;
-  border-radius: 8px;
-  background-color: black;
-  opacity: 0.7;
-}
-@media (max-width: 500px) {
-  .main .middle-section {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-  }
-}
-.title-slogan {
+.container .WHYBUY {
   text-align: center;
-  color: #C4C4C4;
+  font-size: 80px;
+  color: white;
 }
-.main-title {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 5rem;
-  color: #00DFFC;
-}
-Button {
-  border-radius: 10%;
-  cursor: pointer;
-  margin: 25px;
-  width: 10%;
-  height: 50px;
-}
-@media (max-width: 500px) {
-  Button {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    width: 270px;
-  }
-}
-.bottom-img {
-  display: flex;
-  justify-content: center;
-  opacity: 0.5;
-  width: 100%;
-  margin: 20px;
-  width: 1860px;
-  height: 360px;
-}
-@media (max-width: 500px) {
-  .bottom-img {
-    display: flex;
-    justify-content: center;
-    border-radius: 40%;
-    opacity: 0.7;
-    width: 100%;
-    margin: auto;
-    height: 500px;
-  }
-}
-footer {
-  flex-direction: center;
-  display: flex;
-  font-size: 1.8rem;
-}
-footer .copywright {
-  color: #00DFFC;
-  padding: 20px;
-  text-align: center;
-  margin: 10%;
-}
-@media (max-width: 500px) {
-  footer .copywright {
-    display: flex;
-    align-items: flex-end;
-  }
-}
-.container2 {
-  background-image: url(/design-files/rent-tech.jpg);
-  width: 100%;
-  height: 1705px;
-  background-size: cover;
-  background-position: center;
-}
-@media (max-width: 500px) {
-  .container2 {
-    background: #005F6B;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: inherit;
-    height: 246rem;
-    width: 57ch;
-  }
-}
-.topNav2 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  border: solid black 1px;
-  width: 1880px;
-  background-color: #2c237a;
-  font-size: 1.5rem;
-}
-@media (max-width: 500px) {
-  .topNav2 header {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    width: 100%;
-    margin: 10px;
-    width: 305px;
-    height: 8rem;
-  }
-}
-.topNav2 .nav-links {
-  color: #C4C4C4;
-  font-size: 1.8rem;
-}
-.topNav2 a:Hover {
-  color: #477F87;
-}
-.topNav2 h1 {
-  height: 50%;
-  color: #C4C4C4;
-}
-.main2 .middle-section2 {
-  display: flex;
-  justify-content: space-between;
-  color: #00DFFC;
-  width: 96%;
-  margin: 15px auto;
-}
-@media (max-width: 500px) {
-  .main2 .middle-section2 {
-    display: flex;
-    margin: 10px 0;
-    flex-direction: column;
-  }
-}
-.main2 .middle-section2 p {
-  padding: 2%;
-  border: solid black 4px;
-  margin: 0 10px;
-  border-radius: 8px;
-  background-color: blueviolet;
-  opacity: 0.9;
-}
-.main3 .middle-section3 {
-  display: flex;
-  justify-content: space-between;
-  color: #00DFFC;
-  width: 96%;
-  margin: 100px auto;
-}
-@media (max-width: 500px) {
-  .main3 .middle-section3 {
-    display: flex;
-    margin: 10px 0;
-    flex-direction: column;
-  }
-}
-.main3 .middle-section3 p {
-  padding: 2%;
-  border: solid black 4px;
-  margin: 0 10px;
-  border-radius: 8px;
-  background-color: blueviolet;
-  opacity: 0.9;
-}
-.title-about {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 4rem;
-  color: #00DFFC;
-  border: solid black 4px;
-  opacity: 0.9;
-  background-color: blueviolet;
-  border-radius: 8px;
-}
-footer {
-  flex-direction: center;
-  display: flex;
-  font-size: 1.8rem;
-}
-footer .copywright {
+.container .mid {
+  margin-top: 20px;
   color: black;
-  padding: 20px;
+}
+.container .first {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.container p {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+.container h1 {
   text-align: center;
-  margin: 10%;
+}
+.container .Explore {
+  width: 33%;
+}
+@media (max-width: 500px) {
+  .container .Explore {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.container .Explore .camera {
+  width: 100%;
+}
+.container .Try-it {
+  width: 33%;
+}
+@media (max-width: 500px) {
+  .container .Try-it {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.container .Try-it .vrimage {
+  width: 100%;
+}
+.container .Insured {
+  width: 33%;
+}
+@media (max-width: 500px) {
+  .container .Insured {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.container .Insured .teslaimage {
+  width: 100%;
+}
+.container .Featured-Products {
+  margin-top: 20px;
+  width: 100%;
+}
+.container .Featured-Products .products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .Featured-Products .Tesla {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .Featured-Products .Tesla {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.container .Featured-Products .Tesla .teslarent {
+  width: 100%;
+}
+.container .Featured-Products .Vr {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .Featured-Products .Vr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.container .Featured-Products .Vr .vrrent {
+  width: 100%;
+}
+.container .Featured-Products .drone {
+  width: 50%;
+  margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .container .Featured-Products .drone {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.container .Featured-Products .drone .dronerent {
+  width: 100%;
+}
+.container .Featured-Products .gopro {
+  width: 50%;
+  margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .container .Featured-Products .gopro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.container .Featured-Products .gopro .goprorent {
+  width: 100%;
+}
+.container .about-main {
+  margin-top: 10%;
+}
+.container .Why {
+  margin-top: 5%;
+}
+.container p {
+  margin-top: 10%;
+}
+.container .headimage {
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .about-image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.How-about {
+  margin-top: 10%;
+}
+.How-about .mid-about .How {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.What-About {
+  margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .red-moon {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }

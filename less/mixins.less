@@ -1,33 +1,13 @@
-
-.classy-button {
-    border-radius: 10%;
-    cursor: pointer;
+.mobileFlex{
+    display : flex;
+    flex-wrap: wrap;
+    width:100%
 }
 
-.image {
-    display: block;
-    padding: 1%;
-    border-radius: 10%;
-    border: solid black 1px;
-    width: 100%
-}
+.flexBox(@width,@justify){
+    display : flex;
+    flex-wrap: wrap;
+    width :@width;
+    justify-content:@justify;
 
-.paragraph {
-    padding: 2%;
-    border: solid black 4px;
-    margin: 0 10px;
-    border-radius: 8px;
-    background-color: blueviolet;
-    opacity: .9;
-}
-
-.title {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 4rem;
-    color: @secondary-text;
-    border: solid black 4px;
-    opacity: .9;
-    background-color: blueviolet;
-    border-radius: 8px;
 }

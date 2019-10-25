@@ -1,171 +1,206 @@
-.container {
-    background-image: url(/design-files/rent-tech.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    @media @mobile {
-        background: @main-bg;
-        background-size: cover;
-        background-position: inherit;
-        height: 230rem;
-        width: 320px;
-    }
-    // @media @tablet {
-    //     background: @hover;
-    //     width: 100%;
-    //     background-size: cover;
-    //     background-position: center;
-    //     height: 259rem;
-    //     width: 540px;
-    // }
-}
-.logo {
-    height: 40px;
-}
-.topNav {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px;
-        border: solid black 1px;
-        width: 1880px;
-        background-color: rgb(44, 35, 122);
-        }
-        @media @mobile {
-            display: flex;
-            justify-content: space-between;
-            margin: 2px;
-            width: 320px;
-            height: 8rem;
-        }
-        // @media @tablet {
-        //     width: 940px;
-        //     height: 0 auto;
-        //     display: flex;
-        //     justify-content: flex-start;
-        //     font-size: 25px;
-        // }
-    
-    .nav-links {
-        
-        color: @nav-text;   
-        font-size: 1.8rem;
-    } 
-    a:Hover {
-        color: @hover;
-    }
-    h1 {
-        height: 50%;
-        color: @font-color;
-    }
-    
-}
+.container{
+    margin-right: auto; 
+    margin-left:  auto;
+  
+    max-width: 1000px; 
+  
+    padding-right: 10px; 
+    padding-left:  10px; 
 
-.top-img {
-    .image;
-    margin: 15px auto;
-    max-width: 800px;
-    @media @mobile {
-       display: none;
+// Header Navigation
+  .menuoptions {
+      
+      width : 100%;
+      justify-content: space-around;
+  }
+  header nav  a {
+      text-decoration: none;
+      color :@textcolor;     //Using Variables
+     justify-content: space-between; 
+      font-size: @font-size;   //Using Variables
+  }
+  //             Top Section                //
+  .main {
+    .flexBox(100%, space-evenly);//Using parametric mixins 
+      
+      margin-top:40px;
+      background-image: url(../images/main1.jpg);
+      background-size: unset;
+      
     }
-    
-    // @media @tablet {
-    //    display: block;
-    //    padding: 5%;
-    //    border-radius: 40%;
-    //    border: solid black 1px;
-    //    width: 100%
-    // }
-   
-}
-
-.main {
-    .middle-section {
+    .mainbox{
         display:flex;
-        color: @font-color;
-        width: 100%;
-        margin: 15px auto;
-        p {
-            padding: 5%;
-            border: solid black 1px;
-            margin: 0 10px;
-            border-radius: 8px;
-            background-color: @copywright-text;
-            opacity: .7;
-        }
-    
-        @media @mobile{
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            width: 100%;
-        }
+        flex-direction: column;
+        align-items: center;
     }
-}
-
-.title-slogan {
-    text-align: center;
-    color: @font-color;
-}
-
-.main-title {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 5rem;
-    color: @secondary-text;
-}
-
-Button {
-    
-    .classy-button;
-    margin: 25px;
-    width: 10%;
-    height: 50px;
-   
-    @media @mobile {
-        display: flex;
-        justify-content: center;
-        font-size: 2rem;
-        width: 270px;
+    button {
+      width: 140px;
+      height: 40px;
+      background: white;
+      align-items: flex-start;
+      border: 1px solid black;
+      margin-top :40px;
+      border-radius: 30px;
+  
+     }
+    .WHYBUY{
+      text-align: center;
+      font-size: 80px;
+      color : white;
     }
-    // @media @tablet {
-    //     width: 200px;
-    //     font-size: 25px;
-    // }
-}
-
-.bottom-img {
-    display: flex;
-    justify-content: center;
-    opacity: .5;
-    width: 100%;;
-    margin: 20px;
-    width: 1860px;
-    height: 360px; 
-    @media @mobile {
-        display: flex;
-        justify-content: center;
-        border-radius: 40%;
-        opacity: .7;
-        width: 100%;
-        margin: auto;
-        height: 500px;
-    }  
-}
-
-    footer {
-      flex-direction: center;
-      display: flex;
-      font-size: 1.8rem;
-    .copywright {
-        color: @secondary-text;
-        padding: 20px;
+   //      Mid Section       //
+   .mid {
+    margin-top : 20px;
+    color:black;
+    }
+    .first {
+        .flexBox(100%,space-between); //Using Parametric Mixins
+    }
+    p {
+      font-size : 2.5rem;
+      margin-top : 10px;
+    }
+    h1{
         text-align: center;
-        margin: 10%;
-        @media @mobile {
-            display: flex;
-            align-items: flex-end;
+    }
+    .Explore {
+       width: 33%;
+        @media @mobile{
+            .mobileFlex();  //Using Mixins
+        }
+    .camera{
+          width :100%;
         }
     }
-}  
+    .Try-it{
+    width : 33%;
+    @media @mobile{
+        .mobileFlex();  //Using Mixins
+    }
+    .vrimage{
+      width:100%;
+        }
+    }
+  
+    .Insured{
+      width : 33%;
+      @media @mobile{
+        .mobileFlex();  //Using Mixins
+      }
+    
+      .teslaimage {
+        width:100%;
+        
+        }
+    }
+//                      Bottom Section                // 
+    .Featured-Products{
+    margin-top:20px;
+    width : 100%;
+    //  h1{
+    //   text-align : center
+    // }
+    .products {
+      display : flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .Tesla{
+      width : 50%;
+      @media @mobile{
+        .mobileFlex(); //Using Mixins
+      }
+      .teslarent{
+        width:100%;
+    }
+}
+    .Vr{
+      width : 50%;
+      @media @mobile{
+        .mobileFlex(); //Using Mixins
+    }
+      .vrrent{
+        width:100%;
+      }
+  }
+  
+  .drone{
+    width : 50%;
+    margin-top : 10px;
+    @media @mobile{
+        .mobileFlex(); //Using Mixins
+        
+    }
+    .dronerent{
+      width:100%;
+    }
+  }
+  
+  .gopro{
+   width : 50%;
+   margin-top : 10px;
+   @media @mobile{
+    .mobileFlex(); //Using Mixins
+    
+}
+   .goprorent{
+    width:100%;
+   }
+  }
+  
+  }
+  
+  
+///CSS for About page 
+
+.about-main{
+    // border : 1px solid red;
+    margin-top : @margin-top;
+
+    
+    }
+    
+    .Why{
+        margin-top :5%;  
+    }
+        // border : 1px solid green;
+    p{
+        margin-top: @margin-top;
+    }
+    .headimage{
+        margin-top: 5%;
+
+        
+        
+        
+    }
+
+}
+
+.about-image{
+    @media @mobile{
+        .mobileFlex(); //Using Mixins
+    
+}
+}
+
+.How-about{
+    margin-top : @margin-top;
+
+    .mid-about .How{
+        margin-top : @margin-top;
+        margin-bottom: 10%;
+    }
+}
+
+.What-About{
+    margin-top :@margin-top;
+}
+
+.red-moon{
+    @media @mobile{
+        .mobileFlex(); //Using Mixins
+        
+    }
+}
+
