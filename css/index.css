@@ -175,6 +175,29 @@ footer {
   font-size: 2rem;
   margin-top: 10px;
 }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+header h1 {
+  padding: 0px;
+}
+header nav {
+  margin: 24px 0 ;
+}
+header a {
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+footer {
+  padding: 20px 0;
+  margin-top: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -183,8 +206,6 @@ footer {
   padding-left: 10px;
 }
 .container .menuoptions {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
 }
@@ -195,16 +216,24 @@ footer {
   font-size: 2rem;
 }
 .container .main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
   margin-top: 40px;
   background-image: url(../images/main1.jpg);
   background-size: unset;
+}
+.container .mainbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container button {
   width: 140px;
   height: 40px;
   background: white;
   align-items: flex-start;
-  margin-left: 40%;
   border: 1px solid black;
   margin-top: 40px;
   border-radius: 30px;
@@ -222,7 +251,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .container p {
   font-size: 2.5rem;
@@ -300,7 +329,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 10%;
   }
 }
 .container .Featured-Products .Vr .vrrent {
